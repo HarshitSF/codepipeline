@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<title>LogIn Page</title>
+	<style>
+		form {
+			color:violet;
+			background-color:grey;
+			background-image: url('vk1.jpg');
+			background-repeat: no-repeat;
+			background-position: top center;
+			animation-name: example;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+			}
+		@keyframes example{
+			0% {background-image: url('vk1.jpg');}	
+			20% {background-image: url('vk2.jpg');}
+			40% {background-image: url('vk3.jpg');}
+			60% {background-image: url('vk4.jpg');}
+			80% {background-image: url('vk5.webp');}
+			100% {background-image: url('vk1.jpg');}
+				}		
+		input {
+			border: 1px solid grey;
+			}
+		input[type=image]{
+			transition: width 2s linear;
+				}
+		input[type=image]:hover {
+				width:130;
+					}
+
+		.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+	marquee {
+		background-color:blue;
+		 height: 5%;
+		 scrollamount:10;
+		font-weight:bold;
+		color:white;
+		padding-top: 10px;}
+	</style>
+	</head>
+
+
+<body>
+	<marquee>Fill The Form Carefully And If You Find Any Problem Then Contact On 7018379318 or Email-hs1079214@gmail.com</marquee>
+	<form method = "post" >
+		
+		<fieldset>
+		<b>* Required</b></br></br>
+		<legend>Registration Form</legend>
+		<b>Name</b></br></br><input type = "text" name = "name" placeholder = "enter your name.." autofocus></br></br>
+		<b>Roll No.</b></br></br><input type = "text" name = "roll" placeholder = "enter your roll.."></br></br>
+		<b>CGPI</b></br></br><input type = "text" name = "cgpi" placeholder = "enter your cgpi.."></br></br>
+		<b>DOB </b></br></br><input type = "date" name = "dob"></br></br>
+		<b>Gender    </b><input type = "radio" name = "gender" value = "male">Male <input type = "radio" name = "gender" value = "female">FeMale
+			<input type = "radio" name = "gender" value = "other">Other</br></br>
+		<b>E-mail</b></br></br><input type = "email" name = "mail:" placeholder = "enter your email.."></br></br>
+		<b>Contact</b></br></br><input type = "text" name = "phone" placeholder = "enter your mobile no.."></br></br>
+		<b>Password</b></br></br><input type = "password" name = "pswd" placeholder = "create your password.."></br></br>
+		<b>Retype Password</b></br></br><input type = "password" name = "pswd" placeholder = "re-enter password.."></br></br>
+		 <b>College</b></br></br><input type = "text" maxlength = "50" size = "34" name = "clg" placeholder = "enter your college name.."></br></br>
+		<b>Branch</b></br></br><input type = "text" list = "branch" name = "brnch" placeholder = "choose your branch..">
+		<datalist id = "branch"><option>CSE</option><option>ECE</option><option>EE</option><option>IT</option>
+		<option>CE</option><option>CHE</option><option>ME</option><option>MSE</option></datalist></br></br>
+		<b>Semester</b></br></br><input type = "text" list = "sem" name = "sems" placeholder= "choose your semester.."><datalist id = "sem"><option>Ist</option>
+		<option>IInd</option><option>IIIrd</option><option>IVth</option><option>Vth</option><option>VIth</option>
+		<option>VIIth</option><option>VIIIth</option></datalist></br></br> 
+		<b>Write About Your Skills:</b></br></br><textarea name = "message" row = "8" col = "13"></textarea></br></br>
+		<input type = "checkbox" name = "terms">I accept <b><i>Terms and Conditions.</i></b></br></br>
+		<input type = "image" src = "submit.gif" alt = "Submit" width = "90" height = "60">
+	<input type = "image" src = "reset.jpg" alt = "Submit" width = "90" height = "60">
+		</fieldset>
+	</form>
+<div class = "center">
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+  </div>
+</div>
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">HKS</text>
+</svg>
+
+<canvas id="myCanvas" width="200" height="100" style="color: #d3d3d3 text-align:center;" >
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "25px Arial";
+ctx.strokeText("@Harshit Singhal",1,35);
+</script>
+
+</body>
+</html>
